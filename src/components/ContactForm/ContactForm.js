@@ -3,6 +3,7 @@ import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
 import css from './ContactForm.module.css';
 import { nanoid } from 'nanoid';
+import Notiflix from 'notiflix';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -15,17 +16,20 @@ export const ContactForm = () => {
     event.preventDefault();
     const form = event.target;
     const name = form.elements.name.value;
-    const phone = form.elements.number.value;
+    const number = form.elements.number.value;
     if (
       contacts.find(
         contact => name.toLowerCase() === contact.name.toLowerCase()
       )
     ) {
-      alert(`${name} is already in contacts :)`);
+      Notiflix.Notify.warning(`${name} is already in contacts :)`, {
+        position: 'center-top',
+        timeout: 5000,
+      });
       form.reset();
       return;
     }
-    dispatch(addContact({ name, phone }));
+    dispatch(addContact({ name, number }));
     form.reset();
   };
 

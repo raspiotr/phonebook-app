@@ -24,7 +24,7 @@ export default function Contacts() {
         <title>Your contacts list</title>
       </Helmet>
 
-      <h1>Phonebook</h1>
+      <h2>Your phonebook</h2>
       <ContactForm />
 
       <h2>Contacts</h2>
