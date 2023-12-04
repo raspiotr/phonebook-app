@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[290],{7290:function(e,t,n){n.r(t),n.d(t,{default:function(){return i}});var o="Home_Container__Ccfa4",c="Home_Title__zLKc5",_=n(184);function i(){return(0,_.jsx)("div",{style:o,children:(0,_.jsx)("h1",{style:c,children:"Contacts List App - Welcome!"})})}}}]);
-//# sourceMappingURL=290.7e7b7f7c.chunk.js.map
