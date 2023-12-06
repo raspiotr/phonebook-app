@@ -11,6 +11,7 @@ export const ContactListItem = ({ contact }) => {
 
   return (
     <li className={css.listItem}>
+      <span className="material-symbols-outlined">contacts_product</span>
       <span className={css.listItemText}>
         {name}: {number}
       </span>

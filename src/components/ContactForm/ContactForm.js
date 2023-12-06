@@ -43,6 +43,7 @@ export const ContactForm = () => {
         type="text"
         pattern="[a-zA-Z\s'\-]*"
         name="name"
+        placeholder="Enter contact name"
         id={nameInputId}
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
         required
@@ -54,6 +55,7 @@ export const ContactForm = () => {
         className={css.formInput}
         type="tel"
         name="number"
+        placeholder="Enter phone number"
         id={phoneInputId}
         pattern="[0-9\s\-]+"
         title="Phone number must be digits and can contain spaces and dashes"

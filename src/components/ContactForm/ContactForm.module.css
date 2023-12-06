@@ -1,9 +1,9 @@
 .form {
-  border: 2px solid black;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 10px;
-  max-width: 350px;
+  margin-bottom: 50px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .formLabel {
@@ -11,18 +11,32 @@
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 5px;
+  letter-spacing: 0.3em;
 }
 
 .formInput {
   display: block;
   margin-bottom: 15px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #1d21ff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 3px solid #9e079e;
+  font-size: 14px;
+  min-width: 250px;
+}
+
+.formInput:focus,
+.formInput:hover {
+  border-color: #03a9f4;
 }
 
 .formButton {
   border-radius: 10px;
   border: none;
-  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  transition: all 1.5s ease;
+  background: linear-gradient(32deg, #034ff4, #d30a7c, #c4ff3b, #0327f4);
+  transition: all 0.2s ease;
   font-weight: normal;
   letter-spacing: 0.05rem;
   padding: 0;
@@ -31,13 +45,13 @@
 .formButton span {
   font-family: 'Nova Square';
   display: block;
-  border: 1px solid #03a9f4;
+  border: 1px solid #0307f4;
   padding: 5px 15px;
   font-size: 14px;
   border-radius: 10px;
   background: #ffffff10;
   backdrop-filter: blur(20px);
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
   transition-property: color;
   height: 100%;
   width: 100%;

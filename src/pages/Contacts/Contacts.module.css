@@ -1,0 +1,11 @@
+.ContentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
