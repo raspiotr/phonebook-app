@@ -19,6 +19,13 @@ const authSlice = createSlice({
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
+        Notiflix.Notify.success(
+          'Hooray! You have successfully registered and logged in.',
+          {
+            position: 'center-top',
+            timeout: 5000,
+          }
+        );
       })
       .addCase(register.rejected, () => {
         Notiflix.Notify.failure(
@@ -34,6 +41,10 @@ const authSlice = createSlice({
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
+        Notiflix.Notify.success('Hooray! You are logged in.', {
+          position: 'center-top',
+          timeout: 5000,
+        });
       })
       .addCase(logIn.rejected, () => {
         Notiflix.Notify.failure('Login failed! Wrong email or password.', {
@@ -45,6 +56,10 @@ const authSlice = createSlice({
         state.user = { name: null, email: null };
         state.token = null;
         state.isLoggedIn = false;
+        Notiflix.Notify.info('You have logged out.', {
+          position: 'center-top',
+          timeout: 5000,
+        });
       })
       .addCase(refreshUser.pending, state => {
         state.isRefreshing = true;

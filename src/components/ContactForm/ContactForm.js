@@ -22,7 +22,7 @@ export const ContactForm = () => {
         contact => name.toLowerCase() === contact.name.toLowerCase()
       )
     ) {
-      Notiflix.Notify.warning(`${name} is already in contacts :)`, {
+      Notiflix.Notify.info(`${name} is already in contacts :)`, {
         position: 'center-top',
         timeout: 5000,
       });
