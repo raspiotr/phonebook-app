@@ -1,0 +1,12 @@
+.RefreshingBox {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 75px;
+  align-items: center;
+}
+
+.RefreshingText {
+  display: inline-block;
+  font-size: 30px;
+}

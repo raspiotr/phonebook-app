@@ -52,7 +52,9 @@ export const RegisterForm = () => {
           required
         />
       </label>
-      <button type="submit">Register</button>
+      <button className={css.Button} type="submit">
+        Register
+      </button>
     </form>
   );
 };

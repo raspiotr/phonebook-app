@@ -60,7 +60,7 @@ export const ContactForm = () => {
         required
       />
       <button className={css.formButton} type="submit">
-        Add contact
+        <span>Add contact</span>
       </button>
     </form>
   );

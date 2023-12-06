@@ -39,7 +39,9 @@ export const LoginForm = () => {
           required
         />
       </label>
-      <button type="submit">Log In</button>
+      <button className={css.Button} type="submit">
+        Log In
+      </button>
     </form>
   );
 };
