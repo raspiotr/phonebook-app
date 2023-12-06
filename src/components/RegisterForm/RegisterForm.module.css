@@ -1,11 +1,20 @@
 .Form {
-  width: 320px;
+  width: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
 }
 
 .Label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  gap: 10px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  align-items: center;
 }
 
 .Button {
@@ -79,4 +88,66 @@
 .Button:hover,
 .Button:focus {
   scale: 1.02;
+}
+
+.BoxInput {
+  position: relative;
+}
+
+.Border {
+  background-image: linear-gradient(
+    to right bottom,
+    #e300ff,
+    #ff00aa,
+    #ff5956,
+    #ffb900,
+    #fffe00
+  );
+  box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.5),
+    25px -10px 30px -5px rgba(255, 0, 212, 0.5),
+    25px 10px 30px -5px rgba(255, 174, 0, 0.5),
+    -25px 10px 30px -5px rgba(255, 230, 0, 0.5);
+  padding: 4px;
+}
+
+.Input {
+  background-color: #212121;
+  min-width: 250px;
+  height: 40px;
+  padding: 0 19px 0 10px;
+  font-size: 14px;
+  position: relative;
+  border: none;
+  color: white;
+  outline: 0;
+  overflow: hidden;
+  font-family: 'Nova Square';
+}
+
+.BoxInput::after,
+.BoxInput::before {
+  content: '';
+  width: 130px;
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+}
+
+.BoxInput::after {
+  bottom: 0;
+  right: 0;
+}
+
+.BoxInput::before {
+  top: 0;
+  left: 0;
+}
+
+.Input::placeholder {
+  transition: all 0.5s ease-in, transform 0.2s ease-in 0.6s;
+}
+
+.Input:focus::placeholder {
+  padding-left: 165px;
+  transform: translateY(-50px);
 }
