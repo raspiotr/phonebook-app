@@ -17,13 +17,16 @@ export const Filter = () => {
       <label className={css.filterLabel} htmlFor={filterInputId}>
         Find contact by name
       </label>
-      <input
-        className={css.filterInput}
-        type="text"
-        name="filter"
-        id={filterInputId}
-        onChange={handleFilterChange}
-      />
+      <div className={css.inputBorder}>
+        <input
+          className={css.filterInput}
+          type="text"
+          name="filter"
+          placeholder="Enter name"
+          id={filterInputId}
+          onChange={handleFilterChange}
+        />
+      </div>
     </div>
   );
 };

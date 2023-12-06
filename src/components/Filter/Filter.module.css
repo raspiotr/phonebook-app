@@ -6,5 +6,58 @@
 }
 
 .filterInput {
-  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  outline: none;
+  border: double 0;
+  background: #252525;
+  border-radius: 50px;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #ff5956;
+  font-family: 'Nova Square';
+}
+
+.inputBorder {
+  padding: 5px;
+  margin: 1em 0;
+  border-radius: 50px;
+  max-width: 250px;
+  background: linear-gradient(
+    330.28deg,
+    #9e079e 20%,
+    #1d21ff 50%,
+    #30ff1d 100%
+  );
+}
+
+.filterInput::placeholder {
+  color: #ff5956;
+  opacity: 0.6;
+  font-family: 'Nova Square';
+}
+
+.inputBorder:focus-within {
+  background: linear-gradient(
+    330.28deg,
+    #2cfff2 0%,
+    #1e78ff 30.73%,
+    #ff54a6 55.73%,
+    #ff6e1d 79.17%,
+    #ff3e3e 100%
+  );
+}
+
+.inputBorder:hover {
+  background: linear-gradient(
+    330.28deg,
+    #2cfff2 0%,
+    #1e78ff 30.73%,
+    #ff54a6 55.73%,
+    #ff6e1d 79.17%,
+    #ff3e3e 100%
+  );
 }
