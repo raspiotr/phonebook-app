@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[290],{7290:function(e,t,c){c.r(t),c.d(t,{default:function(){return a}});var n=c(4270),o="Home_Container__Ccfa4",s="Home_Title__zLKc5",i=c(184);function a(){return(0,i.jsxs)("div",{className:o,children:[(0,i.jsx)(n.q,{children:(0,i.jsx)("title",{children:"Contacts List App - Welcome!"})}),(0,i.jsx)("h1",{className:s,children:"Contacts List App - Welcome!"})]})}}}]);
-//# sourceMappingURL=290.4860d6e8.chunk.js.map
