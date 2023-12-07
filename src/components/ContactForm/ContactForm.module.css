@@ -46,7 +46,7 @@
   font-family: 'Nova Square';
   display: block;
   border: 1px solid #0307f4;
-  padding: 5px 15px;
+  padding: 5px 20px;
   font-size: 14px;
   border-radius: 10px;
   background: #ffffff10;
@@ -54,7 +54,6 @@
   transition: 0.2s ease-in-out;
   transition-property: color;
   height: 100%;
-  width: 100%;
 }
 
 .formButton span:hover {

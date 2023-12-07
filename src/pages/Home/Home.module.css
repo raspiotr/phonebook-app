@@ -15,5 +15,6 @@
 }
 
 .Image {
+  width: 80%;
   filter: drop-shadow(40px 10px 30px rgba(255, 174, 0, 0.5));
 }
