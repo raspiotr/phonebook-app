@@ -9,5 +9,6 @@
 
 .Box {
   display: flex;
-  gap: 30px;
+  gap: 10px;
+  margin-right: 25px;
 }
